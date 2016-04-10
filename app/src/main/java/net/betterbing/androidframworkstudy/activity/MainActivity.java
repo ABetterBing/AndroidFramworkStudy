@@ -91,6 +91,26 @@ public class MainActivity extends AppCompatActivity {
         startIntent(GlideActivity.class);
     }
 
+    @OnClick(R.id.button_picasso)
+    void onPicassoClick() {
+        startIntent(PicassoActivity.class);
+    }
+
+    @OnClick(R.id.button_universalimageloader)
+    void onUILClick() {
+        startIntent(UILActivity.class);
+    }
+
+    @OnClick(R.id.button_retrofit)
+    void onRetrofitClick() {
+        startIntent(RetorfitActivity.class);
+    }
+
+    @OnClick(R.id.button_okhttp)
+    void onOKhttpClick() {
+        startIntent(OKHttpActivity.class);
+    }
+
     private void startIntent(Class clazz) {
         Intent intent = new Intent(this, clazz);
         startActivity(intent);

@@ -1,1 +1,1 @@
-include ':app',":MaterialDesign",":PullToRefresh"
+include ':app',":PullToRefresh"

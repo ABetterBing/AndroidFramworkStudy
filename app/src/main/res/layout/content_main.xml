@@ -26,78 +26,98 @@
                 android:id="@+id/button_recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="RecyclerView" />
 
             <Button
                 android:id="@+id/button_bottomsheet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="BottomSheet" />
 
             <Button
                 android:id="@+id/button_drawlayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="NavigationDraw" />
 
             <Button
                 android:id="@+id/button_viewpager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="ViewPager" />
-
-            <Button
-                android:id="@+id/button_eventbus"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="EventBus" />
 
             <Button
                 android:id="@+id/button_PullToRefresh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="PullToRefresh" />
-
-            <Button
-                android:id="@+id/button_dagger2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dagger2" />
 
             <Button
                 android:id="@+id/button_glide"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="Glide" />
 
             <Button
                 android:id="@+id/button_picasso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="Picasso" />
+
+            <Button
+                android:id="@+id/button_universalimageloader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="universalimageloader" />
 
             <Button
                 android:id="@+id/button_retrofit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="retrofit" />
 
             <Button
                 android:id="@+id/button_okhttp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="OKHttp" />
+
+            <Button
+                android:id="@+id/button_eventbus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="EventBus" />
+
+            <Button
+                android:id="@+id/button_dagger2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Dagger2" />
 
             <Button
                 android:id="@+id/button_ListViewAnimation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="ListViewAnimation" />
 
             <Button
                 android:id="@+id/button_RoundedImageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="RoundedImageView" />
 
 
@@ -105,54 +125,63 @@
                 android:id="@+id/button_SwipeRefreshLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="SwipeRefreshLayout" />
 
             <Button
                 android:id="@+id/button_SwipeMenuListView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="SwipeMenuListView" />
 
             <Button
                 android:id="@+id/button_AndroidResideMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="AndroidResideMenu" />
 
             <Button
                 android:id="@+id/button_volley"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="Volley" />
 
             <Button
                 android:id="@+id/button_rxjava"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="RxJava" />
 
             <Button
                 android:id="@+id/button_rxandroid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="RxAndroid" />
 
             <Button
                 android:id="@+id/button_databinding"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="DataBinding" />
 
             <Button
                 android:id="@+id/button_MVP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="MVP" />
 
             <Button
                 android:id="@+id/button_leakcanary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="LeakCanary" />
 
         </LinearLayout>
