@@ -3,6 +3,7 @@ package net.betterbing.androidframworkstudy.utils;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.facebook.stetho.okhttp.StethoInterceptor;
 import com.squareup.okhttp.Callback;
 import com.squareup.okhttp.FormEncodingBuilder;
 import com.squareup.okhttp.Headers;
@@ -36,6 +37,8 @@ public class OkHttpUtils {
             synchronized (OkHttpUtils.class) {
                 if (mInstance == null) {
                     mInstance = new OkHttpClient();
+                    //TODO 这里在不需要stetho的时候需要去掉
+                    mInstance.networkInterceptors().add(new StethoInterceptor());
                 }
             }
         }
@@ -75,29 +78,29 @@ public class OkHttpUtils {
         if (Log.isLoggable(TAG, Log.DEBUG)) {
             Log.d(TAG, request.method().toUpperCase() + request.urlString());
         }
-            getInstance().newCall(request).enqueue(new Callback() {
-                @Override
-                public void onFailure(Request request, IOException e) {
-                    if (callback != null) {
-                        callback.onError(request, e);
-                        callback.onAfter();
-                    } else {
-                        DEFAULT_RESULT_CALLBACK.onError(request, e);
-                        DEFAULT_RESULT_CALLBACK.onAfter();
-                    }
+        getInstance().newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                if (callback != null) {
+                    callback.onError(request, e);
+                    callback.onAfter();
+                } else {
+                    DEFAULT_RESULT_CALLBACK.onError(request, e);
+                    DEFAULT_RESULT_CALLBACK.onAfter();
                 }
+            }
 
-                @Override
-                public void onResponse(Response response) throws IOException {
-                    if (callback != null) {
-                        callback.onResponse(response);
-                        callback.onAfter();
-                    } else {
-                        DEFAULT_RESULT_CALLBACK.onResponse(response);
-                        DEFAULT_RESULT_CALLBACK.onAfter();
-                    }
+            @Override
+            public void onResponse(Response response) throws IOException {
+                if (callback != null) {
+                    callback.onResponse(response);
+                    callback.onAfter();
+                } else {
+                    DEFAULT_RESULT_CALLBACK.onResponse(response);
+                    DEFAULT_RESULT_CALLBACK.onAfter();
                 }
-            });
+            }
+        });
     }
 
     public static void post(String url, final ResultCallback callback) {
