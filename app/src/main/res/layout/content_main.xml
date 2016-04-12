@@ -107,6 +107,13 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:id="@+id/button_MVP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MVP"
+                android:textAllCaps="false" />
+
+            <Button
                 android:id="@+id/button_eventbus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -184,12 +191,6 @@
                 android:text="DataBinding"
                 android:textAllCaps="false" />
 
-            <Button
-                android:id="@+id/button_MVP"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MVP"
-                android:textAllCaps="false" />
 
             <Button
                 android:id="@+id/button_leakcanary"

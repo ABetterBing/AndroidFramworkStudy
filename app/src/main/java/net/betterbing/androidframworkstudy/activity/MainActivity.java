@@ -121,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
         startIntent(CustomViewByExtendsViewGroup.class);
     }
 
+    @OnClick(R.id.button_MVP)
+    void onMVPClick() {
+        startIntent(MVPActivity.class);
+    }
+
     private void startIntent(Class clazz) {
         Intent intent = new Intent(this, clazz);
         startActivity(intent);
