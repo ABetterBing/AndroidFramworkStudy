@@ -111,6 +111,16 @@ public class MainActivity extends AppCompatActivity {
         startIntent(OKHttpActivity.class);
     }
 
+    @OnClick(R.id.button_customview_ondraw)
+    void onCustomViewOnDrawClick() {
+        startIntent(CustomViewByOverrideOnDraw.class);
+    }
+
+    @OnClick(R.id.button_customview_extends_viewgroup)
+    void onCustomViewExtendsViewGroupClick() {
+        startIntent(CustomViewByExtendsViewGroup.class);
+    }
+
     private void startIntent(Class clazz) {
         Intent intent = new Intent(this, clazz);
         startActivity(intent);
