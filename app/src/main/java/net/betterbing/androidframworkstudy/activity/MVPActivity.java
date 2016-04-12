@@ -29,7 +29,7 @@ public class MVPActivity extends BaseHeadActivity {
 
     @Override
     public void onCreateView(Bundle savedInstanceState, Toolbar toolBar) {
-        setTitle("MVP与MVC区别");
+        setTitle("MVC,MVP,MVVM");
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
